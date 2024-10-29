@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { View, text, Image, TextInput, TouchableOpacity } from "react-native";
+import { View, Text, Image, TextInput, TouchableOpacity } from "react-native";
 import Constants from "expo-constants";
 
 const StatusBarHeight = Constants.statusBarHeight;
@@ -44,7 +44,7 @@ export const SubTitle = styled.Text`
   color: ${brun};
 `;
 
-export const Tekst = styled.Input`
+export const Tekst = styled.TextInput`
   font-size: 18%;
   color: ${brun};
   width: 90%;

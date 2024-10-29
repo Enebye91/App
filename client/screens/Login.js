@@ -1,4 +1,3 @@
-import React from "react";
 import React, { useState } from "react";
 import { StatusBar } from "expo-status-bar";
 import {
@@ -13,52 +12,52 @@ import {
 } from "../components/styles";
 
 export default function Login() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [errors, setErrors] = useState({});
+  // const [email, setEmail] = useState("");
+  // const [password, setPassword] = useState("");
+  // const [errors, setErrors] = useState({});
 
-  const checkEmail = async (email) => {
-    return Promise.resolve(false);
-  };
+  // const checkEmail = async (email) => {
+  //   return Promise.resolve(false);
+  // };
 
-  const checkPassword = async (password) => {
-    return Promise.resolve(false);
-  };
+  // const checkPassword = async (password) => {
+  //   return Promise.resolve(false);
+  // };
 
-  const validateEmail = async (email) => {
-    if (!email) return "Email required";
+  // const validateEmail = async (email) => {
+  //   if (!email) return "Email required";
 
-    const emailExits = await checkEmail(email);
-    if (emailExits) return "Email already exits";
-    return null;
-  };
+  //   const emailExits = await checkEmail(email);
+  //   if (emailExits) return "Email already exits";
+  //   return null;
+  // };
 
-  const validatePassword = async (password) => {
-    if (!password) return "Password required";
+  // const validatePassword = async (password) => {
+  //   if (!password) return "Password required";
 
-    const passwordExits = await checkPassword(password);
-    if (passwordExits) return "Password already Exits";
-    return null;
-  };
+  //   const passwordExits = await checkPassword(password);
+  //   if (passwordExits) return "Password already Exits";
+  //   return null;
+  // };
 
-  const validate = async () => {
-    const error = {};
-    const emailError = await validateEmail(email);
-    const passwordError = await validatePassword(password);
+  // const validate = async () => {
+  //   const error = {};
+  //   const emailError = await validateEmail(email);
+  //   const passwordError = await validatePassword(password);
 
-    if (emailError) error.email = emailError;
-    if (passwordError) error.password = passwordError;
+  //   if (emailError) error.email = emailError;
+  //   if (passwordError) error.password = passwordError;
 
-    return error;
-  };
+  //   return error;
+  // };
 
-  const handleSubmit = async () => {
-    const validationError = await validate();
-    if (Object.keys(validationError).length === 0) {
-    } else {
-      setErrors(validationError);
-    }
-  };
+  // const handleSubmit = async () => {
+  //   const validationError = await validate();
+  //   if (Object.keys(validationError).length === 0) {
+  //   } else {
+  //     setErrors(validationError);
+  //   }
+  // };
 
   return (
     <>
@@ -68,7 +67,7 @@ export default function Login() {
           <PageLogo />
           <Title>Clarity</Title>
           <SubTitle>Login</SubTitle>
-          <FormArea>
+          {/* <FormArea>
             <Tekst value={email} onChangeText={setEmail} placeholder="Email" />
 
             <Tekst
@@ -79,7 +78,7 @@ export default function Login() {
             />
 
             <Button title="Login" onPress={handleSubmit} />
-          </FormArea>
+          </FormArea> */}
         </Container>
       </Wrapper>
     </>
